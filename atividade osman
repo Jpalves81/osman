@@ -1,16 +1,100 @@
+//ATIVIDADE1//
 #include <stdio.h>
+#include <stdlib.h>
 
-int main ()
-{
-int count;
+int main(void) {
+	
+float valor, frete, adicional, total, venda, lucro;
 
-       for (count=5; count >= 1; count--)
-       {
-          printf("%d\n", count);
-       }
-       for (count=1; count <=5; count++)
-       {
-           printf("%d\n", count);
-       }
-    return 0;
+printf("Qual o valor da mercadoria?\n");
+scanf("%f", &valor);
+
+printf("Qual o valor do frete?\n");
+scanf("%f", &frete);
+
+printf("Qual o valor dos custos adicionais?\n");
+scanf("%f", &adicional);
+
+total=valor+frete+adicional;
+printf("o total eh: %.1f \n", total);
+
+printf("Qual valor deseja vender a mercadoria?\n");
+scanf("%f", venda);
+
+lucro=venda-total;
+printf("%.1f\n", venda-total);
+printf("seu lucro eh de:%.1f",lucro);	
+return 0;
+
+}
+
+
+//ATIVIDADE2//
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void) {
+
+float raio, pi=3.14, area;
+
+printf("Raio=");
+scanf("%f",&raio);
+
+area= pi*raio*raio;
+printf ("area=%.2f m2\n", area);
+
+	return 0;
+}
+
+//ATIVIDADE3//
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+float altura, largura, ml;
+	
+printf("Qual a altura e a largura da parede em metros:\n");	
+scanf("%f", &altura);
+printf("A altura eh:%.0fm \n", altura);
+scanf("%f", &largura);
+printf("A largura eh:%.0fm\n" , largura);
+
+printf("a area da parede eh:%.0fm \n",altura*largura);
+ml=(altura*largura*300);
+printf("vc ira precisar de %.0fml de latas de tintas \n",altura*largura*300);	
+printf("vc ira precisar de %.0fl de latas de tintas",ml/2000);
+	
+	
+return 0;
+}
+
+//ATIVIDADE4//
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void) {
+
+float num1, num2, num3, num4, media;
+
+printf("Digite uma nota:");
+scanf("%f",& num1);	
+
+printf("Digite uma nota:");
+scanf("%f",& num2);
+
+printf("Digite uma nota:");
+scanf("%f",& num3);
+
+printf("Digite uma nota:");
+scanf("%f",& num4);
+	
+media=((num1+num2+num3+num4)/4);	
+printf("A media eh: %.1f", media);	
+	return 0;
 }
